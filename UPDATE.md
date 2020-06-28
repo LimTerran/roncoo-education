@@ -1,12 +1,21 @@
 ### 版本升级日志
 ---
+###### v8.0.0-RELEASE
+1. 升级FastDFS的版本，已修复加载出现的bug
+2. 升级swagger2的jar版本
+3. 升级spring boot admin，精简server-sba的jar，移除多余的jar
+4. 调整日志输出位置，整合日志web输出
+5. 修复类型不匹配的bug
+
 ###### v7.0.0-RELEASE
 1. 整理优化演示数据
 2. 修复课程简介为空不显示课程信息
 3. roncoo-education-gateway修改为roncoo-education-server-gateway
 4. roncoo-education-job修改为roncoo-education-server-job
 5. roncoo-education-server-admin修改为roncoo-education-server-sba
- 
+6. 修改网关过滤器判断失败，继续执行的bug
+7. 修改网关默认的context-path为/api，使前后端的接口一致
+8. 增加文件存储方式：FastDFS
 
 ###### v6.0.0-RELEASE -- 2020.01.28
 1. 修改网关配置开发环境地址与测试环境地址一致

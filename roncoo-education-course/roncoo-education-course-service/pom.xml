@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.roncoo</groupId>
 		<artifactId>roncoo-education-course</artifactId>
-		<version>7.0.0-RELEASE</version>
+		<version>8.0.0-RELEASE</version>
 	</parent>
 
 	<artifactId>roncoo-education-course-service</artifactId>
@@ -46,6 +46,12 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
+		<!-- fastdfs -->
+		<dependency>
+			<groupId>com.roncoo</groupId>
+			<artifactId>roncoo-spring-boot-starter-fastdfs</artifactId>
 		</dependency>
 
 		<!-- mybatis -->

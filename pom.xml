@@ -5,7 +5,7 @@
 
 	<groupId>com.roncoo</groupId>
 	<artifactId>roncoo-education</artifactId>
-	<version>7.0.0-RELEASE</version>
+	<version>8.0.0-RELEASE</version>
 	<packaging>pom</packaging>
 
 	<name>roncoo-education</name>
@@ -79,7 +79,7 @@
 
 	<properties>
 		<org.springframework.cloud.version>Finchley.SR2</org.springframework.cloud.version>
-		<de.codecentric.version>2.0.4</de.codecentric.version>
+		<de.codecentric.version>2.0.6</de.codecentric.version>
 		<io.zipkin.java.version>2.11.12</io.zipkin.java.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -110,6 +110,14 @@
 				<groupId>com.roncoo</groupId>
 				<artifactId>roncoo-education-util</artifactId>
 				<version>${project.version}</version>
+			</dependency>
+
+			<!-- fastdfs -->
+			<!-- https://mvnrepository.com/artifact/com.roncoo/roncoo-spring-boot-starter-fastdfs -->
+			<dependency>
+				<groupId>com.roncoo</groupId>
+				<artifactId>roncoo-spring-boot-starter-fastdfs</artifactId>
+				<version>1.2.1</version>
 			</dependency>
 
 			<!-- aliyun -->
@@ -144,17 +152,12 @@
 			<dependency>
 				<groupId>com.spring4all</groupId>
 				<artifactId>swagger-spring-boot-starter</artifactId>
-				<version>1.8.0.RELEASE</version>
+				<version>1.9.1.RELEASE</version>
 			</dependency>
-			<dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-models</artifactId>
-                <version>1.5.21</version>
-            </dependency>
 			<dependency>
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>swagger-bootstrap-ui</artifactId>
-				<version>1.9.1</version>
+				<version>1.9.6</version>
 			</dependency>
 
 			<!-- jwt -->
@@ -209,41 +212,13 @@
 			<!-- de.codecentric -->
 			<dependency>
 				<groupId>de.codecentric</groupId>
-				<artifactId>spring-boot-admin-server-cloud</artifactId>
+				<artifactId>spring-boot-admin-starter-server</artifactId>
 				<version>${de.codecentric.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>de.codecentric</groupId>
 				<artifactId>spring-boot-admin-server-ui</artifactId>
 				<version>${de.codecentric.version}</version>
-			</dependency>
-
-			<!-- zipkin -->
-			<dependency>
-				<groupId>io.zipkin.java</groupId>
-				<artifactId>zipkin-server</artifactId>
-				<version>${io.zipkin.java.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.apache.logging.log4j</groupId>
-						<artifactId>log4j-slf4j-impl</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>io.zipkin.java</groupId>
-				<artifactId>zipkin-autoconfigure-ui</artifactId>
-				<version>${io.zipkin.java.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.zipkin.java</groupId>
-				<artifactId>zipkin-autoconfigure-collector-kafka</artifactId>
-				<version>${io.zipkin.java.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.zipkin.java</groupId>
-				<artifactId>zipkin-autoconfigure-storage-elasticsearch</artifactId>
-				<version>${io.zipkin.java.version}</version>
 			</dependency>
 
 			<dependency>

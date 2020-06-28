@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.roncoo</groupId>
 		<artifactId>roncoo-education</artifactId>
-		<version>7.0.0-RELEASE</version>
+		<version>8.0.0-RELEASE</version>
 	</parent>
 
 	<artifactId>roncoo-education-server-sba</artifactId>
@@ -14,11 +14,7 @@
 		<!-- de.codecentric -->
 		<dependency>
 			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-server-cloud</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-server-ui</artifactId>
+			<artifactId>spring-boot-admin-starter-server</artifactId>
 		</dependency>
 
 		<!-- spring cloud -->
