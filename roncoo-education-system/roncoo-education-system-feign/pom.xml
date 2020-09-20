@@ -6,11 +6,10 @@
     <parent>
         <groupId>com.roncoo</groupId>
         <artifactId>roncoo-education-system</artifactId>
-        <version>8.0.0-RELEASE</version>
+        <version>9.0.0-RELEASE</version>
     </parent>
 
     <artifactId>roncoo-education-system-feign</artifactId>
-
     <name>roncoo-education-system-feign</name>
 
     <dependencies>
@@ -24,5 +23,4 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
-
 </project>
